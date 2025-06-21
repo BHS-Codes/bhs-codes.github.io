@@ -1,6 +1,8 @@
 body {
     background-color: #4f5d75;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* .header {
@@ -8,38 +10,42 @@ body {
 } */
 
 h1 {
-    font-size: 50px;
+    font-size: 80px;
+    margin-bottom: 0;
+    padding-top: 20px;
 }
 
 h1, h2 {
     text-align: center;
+    margin-top: 0;
 }
 
 h1, h2, h3 {
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
-
 }
 
 h1 + h2 {
-    color: #ef8354
+    color: #54efb6
 }
 
 .preheader {
-    font-size: 75%;
+    font-size: 50%; 
 }
 
-h3{
-    font-size: 150%;
-    color: #ef8354
-}
+/* "our github org" link */
 
 a:link {
-    color: #bfc0c0;
+    color: #2d3142;
+    background-color: #54efb6;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #2d3142;
+    border-width: 3px;
 }
 
 a:visited {
-    color: #bfc0c0;
+    color: #2d3142;
 }
 
 .orgLink {
@@ -49,19 +55,65 @@ a:visited {
     width: fit-content;
 }
 
+/* rules for the "chunks" */
+
+.outer {
+    /* width: 100vw; */
+    max-width: 100vw;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    /* border: solid #54efb6; */
+    margin-bottom: 2rem;
+}
+
 .inner {
     background-color: #2d3142;
     padding: 1px 5px;
 }
 
+.inner > * {
+    margin-left: clamp(10px, 5vw, 120px);
+    margin-right: clamp(10px, 5vw, 120px);
+}
+
+.inner h3 {
+    font-size: 50px;
+    color: #54efb6;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-style: italic;
+}
+
+.inner h3 + * {
+    margin-top: 5px;
+}
+
 .inner h4 {
     color: #bfc0c0;
-    font-size: 125%;
+    font-size: 30px;
     margin-bottom: 0.25rem;
 }
 
+.inner p {
+    font-size: 20px;
+
+}
+
+/* rules: "about us" */
+
+.aboutUs.inner {
+    margin: 0px, 0px;
+}
+
+.aboutUs.inner p::selection {
+    background: #54efb6;
+}
+
+/* rules: "what we do" */
+
 .whatWeDo {
-    background-color: #ef8354;
+    background-color: #54efb6;
 }
 
 .whatWeDo h3 {
@@ -76,14 +128,14 @@ a:visited {
     color: #2d3142;
 }
 
-.outer {
-    border: solid #ef8354;
-    margin-bottom: 2rem;
+.whatWeDo h3::selection, h4::selection, p::selection {
+    color: white;
+    background: #2d3142;
 }
 
-.whatWeDo.outer {
+/* .whatWeDo.outer {
     border: solid #2d3142;
-}
+} */
 
 p {
     color: white;
