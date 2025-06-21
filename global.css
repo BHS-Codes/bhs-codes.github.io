@@ -1,5 +1,5 @@
 body {
-    background-color: #f5f5f5;
+    background-color: #4f5d75;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -16,13 +16,13 @@ h1, h2 {
 }
 
 h1, h2, h3 {
-    color: #004020;
+    color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
 
 }
 
 h1 + h2 {
-    color: #4B5563
+    color: #ef8354
 }
 
 .preheader {
@@ -30,11 +30,16 @@ h1 + h2 {
 }
 
 h3{
-    font-size: 150%
+    font-size: 150%;
+    color: #ef8354
 }
 
 a:link {
-    color: #004020;
+    color: #bfc0c0;
+}
+
+a:visited {
+    color: #bfc0c0;
 }
 
 .orgLink {
@@ -45,11 +50,41 @@ a:link {
 }
 
 .inner {
-    background-color: #FFF9DC;
+    background-color: #2d3142;
     padding: 1px 5px;
 }
 
+.inner h4 {
+    color: #bfc0c0;
+    font-size: 125%;
+    margin-bottom: 0.25rem;
+}
+
+.whatWeDo {
+    background-color: #ef8354;
+}
+
+.whatWeDo h3 {
+    color: #ffffff;
+}
+
+.whatWeDo p {
+    color: #000000;
+}
+
+.whatWeDo h4 {
+    color: #2d3142;
+}
+
 .outer {
-    border: solid black;
+    border: solid #ef8354;
     margin-bottom: 2rem;
+}
+
+.whatWeDo.outer {
+    border: solid #2d3142;
+}
+
+p {
+    color: white;
 }
