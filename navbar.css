@@ -107,6 +107,11 @@ h3 {
     font-size: 4em;
 }
 
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+
 section p {
     font-size: 1.5em;
 }
@@ -122,7 +127,38 @@ figure img {
 
 figure figcaption {
     margin-top: 15px;
+    margin-left: 40%;
     text-align: right;
-    border-right: 2px solid white;
+    border-right: 2px solid #54efb6;
+    background-color: #54efb680;
+    border-radius: 5px 0 0 5px;
     padding-right: calc(15px - 0.5vw);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+section.alt-color {
+    background-color: #ebebeb;
+    color: #2d3142;
+}
+
+section.alt-color figcaption {
+    border-right-color: #2d3142;
+    background-color: rgba(45, 49, 66, .65);
+    color: #54efb6;
+}
+
+section.alt-layout {
+    grid-template-columns: 5fr 1fr;
+}
+
+section.alt-layout figcaption {
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+    border-style: none;
+    border-left: 2px solid #2d3142;
+    padding-right: unset;
+    padding-left: calc(15px - 0.5vw);;
+    margin-left: unset;
+    margin-right: 40%;
 }
