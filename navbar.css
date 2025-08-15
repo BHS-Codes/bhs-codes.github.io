@@ -96,6 +96,12 @@ section {
     color: #ffffff;
 }
 
+section div.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 h3 {
     margin: inherit;
     font-size: 4em;
@@ -110,6 +116,13 @@ section figure {
 }
 
 figure img {
-    width: 30vw;
+    width: 100%;
     height: auto;
+}
+
+figure figcaption {
+    margin-top: 15px;
+    text-align: right;
+    border-right: 2px solid white;
+    padding-right: calc(15px - 0.5vw);
 }
