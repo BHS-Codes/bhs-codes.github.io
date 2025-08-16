@@ -81,7 +81,7 @@ header h2 {
     font-style: oblique;
 }
 
-header p {
+header .caption {
     position: absolute; /* to allow us to position it whereever we want */
     bottom: 0; /* position it right at the bottom of its parent */
     font-size: 0.75em;
