@@ -179,7 +179,7 @@ section.alt-layout figcaption {
     border-style: none;
     border-left: 2px solid #2d3142;
     padding-right: unset;
-    padding-left: calc(15px - 0.5vw);;
+    padding-left: calc(15px - 0.5vw);
     margin-left: unset;
     margin-right: 40%;
 }
