@@ -35,17 +35,13 @@ h1 + h2 {
 
 /* "our github org" link */
 
-a:link {
+.button {
     color: #2d3142;
     background-color: #54efb6;
     padding: 10px;
     border-radius: 10px;
     border: solid #2d3142;
     border-width: 3px;
-}
-
-a:visited {
-    color: #2d3142;
 }
 
 .orgLink {
@@ -112,28 +108,28 @@ a:visited {
 
 /* rules: "what we do" */
 
-.whatWeDo {
+.teal {
     background-color: #54efb6;
 }
 
-.whatWeDo h3 {
+.teal h3 {
     color: #ffffff;
 }
 
-.whatWeDo p {
+.teal p {
     color: #000000;
 }
 
-.whatWeDo h4 {
+.teal h4 {
     color: #2d3142;
 }
 
-.whatWeDo h3::selection, h4::selection, p::selection {
+.teal h3::selection, h4::selection, p::selection {
     color: white;
     background: #2d3142;
 }
 
-/* .whatWeDo.outer {
+/* .teal.outer {
     border: solid #2d3142;
 } */
 

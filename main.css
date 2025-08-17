@@ -1,0 +1,212 @@
+html,
+body {
+    padding: 0;
+    margin: 0px;
+    color: #ffffff;
+}
+
+html * {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+span.ital {
+    font-style: italic;
+}
+
+nav {
+    background-color: #4f5d75;
+    opacity: .95;
+    margin: 0px;
+    /* border-color: #54efb6; */
+    border-style: none solid solid solid;
+    border-radius: 0px 0px 20px 20px;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline-flex;   
+    color: #ffffff;
+    margin: 5px;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #54efb6;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+header {    
+    color: #ffffff;
+    background-image: url("assets/unsplash-kimson-doan-group_campfire_50.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    margin: -50px 0 0 0;
+    padding: 70px 10px 10px 20px;
+    display: flex;
+    flex-direction: column; /* align vertically */
+    align-items: center;
+    text-align: center;
+    position: relative; /* this is to let the "header p" position be absolute */
+}
+
+header h1 {
+    font-size: 5em;
+    margin-bottom: 0px;
+}
+
+header h2 {
+    margin-top: 0px;
+    /* color: rgb(45, 49, 66); */
+    font-style: oblique;
+}
+
+header .caption {
+    position: absolute; /* to allow us to position it whereever we want */
+    bottom: 0; /* position it right at the bottom of its parent */
+    font-size: 0.75em;
+}
+
+a {
+    color: inherit;
+}
+
+.drop-shadow {
+    text-shadow: 0 5px 20px rgba(7, 2, 38, 0.75);
+}
+
+section {
+    background-color: #2d3142;
+    margin: inherit;
+    padding: 80px 10%;
+    color: #ffffff;
+}
+
+section div.inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h3 {
+    margin: inherit;
+    font-size: 4em;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+
+section p,
+section dl {
+    font-size: 1.5em;
+}
+
+section dt {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+section dd {
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+
+section figure {
+    margin: inherit;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    margin-top: 15px;
+    margin-left: 40%;
+    text-align: right;
+    border-right: 2px solid #54efb6;
+    background-color: #54efb680;
+    border-radius: 5px 0 0 5px;
+    padding-right: calc(15px - 0.5vw);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+section.alt-color {
+    background-color: #ebebeb;
+    color: #2d3142;
+}
+
+section.alt-color figcaption {
+    border-right-color: #2d3142;
+    background-color: rgba(45, 49, 66, .65);
+    color: #54efb6;
+}
+
+section.alt-layout {
+    grid-template-columns: 5fr 1fr;
+}
+
+section.alt-layout figcaption {
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+    border-style: none;
+    border-left: 2px solid #2d3142;
+    padding-right: unset;
+    padding-left: calc(15px - 0.5vw);
+    margin-left: unset;
+    margin-right: 40%;
+}
+
+footer {
+    margin-top: 0;
+    background-color: #4f5d75;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 20px 50px;
+    font-size: 1.2em;
+    border-top: 5px solid #2d3142;
+}
+
+h5 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: inherit;
+    color: #54efb6;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    font-size: inherit;
+}
+
+dl {
+    font-size: inherit;
+}
