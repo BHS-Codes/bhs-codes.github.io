@@ -57,37 +57,35 @@ main {
     padding: 0;
 }
 
+/* this is the default page template */
 header {    
     color: #ffffff;
-    background-image: url("assets/unsplash-kimson-doan-group_campfire_50.jpg");
-    background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    height: 500px;
-    margin: -50px 0 0 0;
-    padding: 70px 10px 10px 20px;
+    background-image: url(../assets/BHSC-tiling-2.png);
+    background-repeat: repeat;
+    background-size: 10%;
+    text-align: left;
+    align-content: unset;
+    justify-content: unset;
+    flex-direction: unset;
     display: flex;
-    flex-direction: column; /* align vertically */
+    padding-left: 10%;
+    padding-top: 40px;
+    height: 300px;
+    margin: -50px 0 0 0;
     align-items: center;
-    text-align: center;
-    position: relative; /* this is to let the "header p" position be absolute */
+    position: relative;
+
 }
 
 header h1 {
-    font-size: 5em;
-    margin-bottom: 0px;
+    font-size: 7em;
 }
 
-header h2 {
-    margin-top: 0px;
-    /* color: rgb(45, 49, 66); */
-    font-style: oblique;
-}
-
-header .caption {
-    position: absolute; /* to allow us to position it whereever we want */
-    bottom: 0; /* position it right at the bottom of its parent */
-    font-size: 0.75em;
+header img.deco {
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
 }
 
 a {
